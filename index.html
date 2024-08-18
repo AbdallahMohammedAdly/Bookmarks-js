@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookmarkSite</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container bg-secondary ">
+        <div class="container p-3">
+        <h2>bookmark</h2>
+        
+            <div class="container p-3 w-75 ">
+                <input type="text"id="bookmark" placeholder="bookmarkname"class="my-3 form-control" />
+            
+                <input type="text" id="bookmarkurl" placeholder="bookmarkurl" class="my-3 form-control" />
+                <input type="button" onclick="save();" id="saveBtn"value="save" class="btn btn-dark my-3 form-control" />
+                <input type="text" name="search" id="search" onkeyup="search(this.value);" placeholder="search for your bookmarks" class="my-3 form-control"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5 bg-body">
+        <table class="table table-striped">
+
+                <thead>
+                    <tr>
+                        <th>bookmark name </th>
+                        <th> bookmark Url</th>
+                    </tr>
+                </thead>
+
+            <tbody id="mytbody">
+               
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
